@@ -1,0 +1,33 @@
+{
+    "name": "miusb",
+    "productName": "miusb",
+    "version": "1.0.0",
+    "description": "Remove pendrive e HD externa com segurança.",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron .",
+        "make": "electron-forge make"
+    },
+    "author": {
+        "name": "Murilo Gomes Julio",
+        "organization": "Mestre da Info",
+        "contact": "https://mestredainfo.wordpress.com/contato/",
+        "url": "https://linktr.ee/mestreinfo"
+    },
+    "copyright": "Copyright (C) 2004-2024 Murilo Gomes Julio",
+    "bugs": {
+        "url": "https://mestredainfo.wordpress.com/bug-reporting/"
+    },
+    "license": "GPL-2.0-only",
+    "devDependencies": {
+        "@electron-forge/cli": "^7.4.0",
+        "@electron-forge/maker-zip": "^7.4.0",
+        "electron": "^30.0.2"
+    },
+    "dependencies": {
+        "axios": "^1.6.8",
+        "cheerio": "^1.0.0-rc.12",
+        "ini": "^4.1.2"
+    }
+}
