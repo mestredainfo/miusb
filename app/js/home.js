@@ -6,7 +6,7 @@
 
 var sHTML = document.body;
 sHTML.innerHTML = `
-<a href="index.html?p=sobre" target="_blank" rel="noopener" class="btn btn-primary">Sobre o MiHash</a> <a href="javascript:novaVersao();" class="btn btn-primary">Verificar Atualização</a>
+<a href="index.html?p=sobre" target="_blank" rel="noopener" class="btn btn-primary">Sobre o MIUSB</a> <a href="javascript:novaVersao();" class="btn btn-primary">Verificar Atualização</a>
 <hr>
 <div class="form-control">
     <label for="txtDriver">Selecione o dispositivo que deseja remover com segurança</label>
