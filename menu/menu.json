@@ -1,0 +1,21 @@
+{
+    "Sobre":
+    {
+        "Criar Atalho": {
+            "page": "criaratalho.php"
+        },
+        "Documentação": {
+            "url": "https://mestredainfo.wordpress.com/category/miusb/",
+            "key": "F1"
+        },
+        "Verificar Atualização": {
+            "page": "checkupdate.php?a=1",
+            "newwindow": true
+        },
+        "separator": {},
+        "Sobre o MIUSB": {
+            "page": "sobre.php",
+            "newwindow": true
+        }
+    }
+}

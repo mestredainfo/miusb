@@ -2,13 +2,17 @@
 
 O Removedor USB, também conhecido como MIUSB, é uma ferramenta projetada para remover dispositivos portáteis, como pendrives e HDs externos, com máxima segurança.
 
+O MIApp é desenvolvido na linguagem PHP a partir da versão 2.0.0 e usa o MIApp para rodar o software no desktop Linux.
+
 ## Executando da Fonte
 
-Para executar MIUSB a partir do código-fonte, siga estas etapas:
+Para executar MIUSB a partir do código-fonte é necessário baixar o MIApp, siga estas etapas:
 
+- Baixe o [MIApp](https://mestredainfo.wordpress.com/miapp/)
 - Extraia o arquivo zip
-- Instale as dependencias necessárias: `npm install`
-- Inicie o aplicativo: `npm start`
+- Exclua os arquivos da pasta app do MIApp
+- Copie os arquivos do MIUSB para a pasta app
+- Execute o MIApp
 
 ## Links
 
