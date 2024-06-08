@@ -2,20 +2,29 @@
     "Sobre":
     {
         "Criar Atalho": {
-            "page": "criaratalho.php"
+            "page": "micreateshortcut.php",
+            "newwindow": true,
+            "width": 0,
+            "height": 0,
+            "menu": false,
+            "hide": true
         },
         "Documentação": {
             "url": "https://mestredainfo.wordpress.com/category/miusb/",
             "key": "F1"
         },
         "Verificar Atualização": {
-            "page": "checkupdate.php?a=1",
-            "newwindow": true
+            "page": "micheckupdate.php",
+            "newwindow": true,
+            "width": 400,
+            "height": 200,
+            "menu": false
         },
         "separator": {},
         "Sobre o MIUSB": {
             "page": "sobre.php",
-            "newwindow": true
+            "newwindow": true,
+            "menu": false
         }
     }
 }
