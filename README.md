@@ -1,23 +1,19 @@
 # MIUSB
 
-O Removedor USB, também conhecido como MIUSB, é uma ferramenta projetada para remover dispositivos portáteis, como pendrives e HDs externos, com máxima segurança.
+O MIUSB é um software desenvolvido para remover dispositivos portáteis, como pendrives e HDs externos, com máxima segurança.
 
-O MIApp é desenvolvido na linguagem PHP a partir da versão 2.0.0 e usa o MIApp para rodar o software no desktop Linux.
+## Requerimento
 
-## Executando da Fonte
+- Sistema Operacional: Linux Debian 12 ou superior, Linux Ubuntu 22.04 ou superior, Windows 10 ou superior
+- Arquitetura: x64
+- MIApp 4 ou superior
 
-Para executar MIUSB a partir do código-fonte é necessário baixar o MIApp, siga estas etapas:
-
-- Baixe o [MIApp](https://mestredainfo.wordpress.com/miapp/)
-- Extraia o arquivo zip
-- Exclua os arquivos da pasta app do MIApp
-- Copie os arquivos do MIUSB para a pasta app
-- Execute o MIApp
+Para baixar e instalar o MIApp acesse o site oficial do [Mestre da Info](https://mestredainfo.wordpress.com/miapp/).
 
 ## Links
 
 - [Página do MIUSB](https://mestredainfo.wordpress.com/miusb/)
-- [Apoie](https://mestredainfo.wordpress.com/apoie/)
+- [Apoie](https://mestredainfo.wordpress.com/assinantes/)
 
 ## Licença
 
