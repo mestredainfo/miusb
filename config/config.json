@@ -1,0 +1,52 @@
+{
+	"app": {
+		"name": "MIUSB",
+		"description": "Remove pendrive e HD externo com segurança.",
+		"version": "2.0.2",
+		"categories": "Utility;",
+		"width": 800,
+		"height": 600,
+		"resizable": false,
+		"icon": "miusb.png",
+		"disableHardwareAcceleration": true,
+		"menu": true
+	},
+	"author": {
+		"name": "Murilo Gomes Julio",
+		"email": "contatomestredainfo@gmail.com",
+		"organization": "Mestre da Info",
+		"contact": "https://mestredainfo.wordpress.com/contato/",
+		"url": "https://linktr.ee/mestreinfo"
+	},
+	"copyright": "Copyright (C) 2004-2024 Murilo Gomes Julio",
+	"homepage": "https://mestredainfo.wordpress.com",
+	"bugs": {
+		"url": "https://mestredainfo.wordpress.com/bug-reporting/"
+	},
+	"license": "GPL-2.0-only",
+	"php": {
+		"linux": {
+			"custom": "",
+			"folder": true,
+			"ini": {
+				"custom": "",
+				"folder": true
+			}
+		},
+		"win32": {
+			"custom": "",
+			"folder": true,
+			"ini": {
+				"custom": "",
+				"folder": true
+			}
+		}
+	},
+	"update": {
+		"url": "https://mestredainfo.wordpress.com/miusb/"
+	},
+	"dev": {
+		"menu": false,
+		"tools": false
+	}
+}
