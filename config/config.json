@@ -2,7 +2,7 @@
 	"app": {
 		"name": "MIUSB",
 		"description": "Remove pendrive e HD externo com segurança.",
-		"version": "2.0.2",
+		"version": "2.0.1",
 		"categories": "Utility;",
 		"width": 800,
 		"height": 600,
