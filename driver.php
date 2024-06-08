@@ -8,9 +8,8 @@
 header("Content-Security-Policy: default-src 'self'");
 header("Content-Security-Policy: script-src 'self' 'unsafe-inline' script.js");
 
-$sServer = filter_var($_SERVER['REQUEST_METHOD'], FILTER_DEFAULT, FILTER_NULL_ON_FAILURE);
-if ($sServer == 'POST') {
-    $cmd = 'ls /media/' . get_current_user() . '/';
+if (miRequestPost()) {
+    $cmd = 'ls /media/' . miUsername() . '/';
 
     $descriptorspec = array(
         0 => array("pipe", "r"),   // stdin is a pipe that the child will read from

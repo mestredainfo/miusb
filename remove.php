@@ -8,8 +8,7 @@
 header("Content-Security-Policy: default-src 'self'");
 header("Content-Security-Policy: script-src 'self' 'unsafe-inline' script.js");
 
-$sServer = filter_var($_SERVER['REQUEST_METHOD'], FILTER_DEFAULT, FILTER_NULL_ON_FAILURE);
-if ($sServer == 'POST') {
+if (miRequestPost()) {
     function cmd($cmd, $tipo = 'array')
     {
         $descriptorspec = array(
@@ -46,19 +45,17 @@ if ($sServer == 'POST') {
         return $txt;
     }
 
-    $sDriver = filter_input(INPUT_POST, 'driver');
+    $sDriver = miCleanPost('driver');
     if (!empty($sDriver)) {
         //echo '<div class="alert alert-info">Obtendo dispositivo...</div>';
         // Obtém o dispositivo
         $sDisp1 = cmd('lsblk -l');
-        $sDisp2 = preg_grep('/\/media\/' . get_current_user() . '\/' . rtrim($sDriver) . '/', $sDisp1);
+        $sDisp2 = preg_grep('/\/media\/' . miUsername(). '\/' . rtrim($sDriver) . '/', $sDisp1);
         $sDisp3 = array_values($sDisp2);
         $sDisp4 = array_filter($sDisp3);
         $sDisp5 = explode(' ', $sDisp4[0]);
 
         if (!empty($sDisp5[0])) {
-            //echo '<div class="alert alert-info">Removendo dispositivo com segurança...</div>';
-
             $sUSB = str_replace(array(' ', "\n"), '', $sDisp5[0]);
 
             sleep(1);
@@ -77,9 +74,9 @@ if ($sServer == 'POST') {
                 sleep(1);
                 flush();
 
-                echo '<div class="alert alert-success">Dispositivo removido com segurança!</div>';
+                echo '<div class="alert alert-success">' . miTranslate('Dispositivo removido com segurança!') . '</div>';
             } else {
-                echo '<div class="alert alert-danger">Dispositivo em uso, não foi possível remover o dispositivo!</div>';
+                echo '<div class="alert alert-danger">' . miTranslate('Dispositivo em uso, não foi possível remover o dispositivo!') . '</div>';
             }
         }
     }
